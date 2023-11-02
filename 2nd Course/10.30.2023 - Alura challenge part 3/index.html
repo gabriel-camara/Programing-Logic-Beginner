@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="title-design">
+        <h1 id="title"></h1>
+    </div>
+    
+    <div class="button-container">
+    <button onclick="openModal('modalOne')" class="button-design">IMC</button>
+    <button onclick="openModal('modalTwo')" class="button-design">Fatorial</button>
+    <button onclick="openModal('modalThree')" class="button-design">Dólar</button>
+    <button onclick="openModal('modalFour')" class="button-design">Área &#x25FB;</button>
+    <button onclick="openModal('modalFive')" class="button-design">Área &#x25Cb;</button>
+    <button onclick="openModal('modalSix')" class="button-design">Tabuada</button>
+    </div>
+
+    <!--Modals-->
+        <!--IMC Modal-->
+        <div id="modalOne" class="modal">
+            <div id="modalOneContainer" class="modal-container">
+                <h2 class="modalTitle-design"></h2>
+                <p1 class="modalText-design"></p1>
+            <input type="number" id="heightInput" class="input-style">
+            <input type="number" id="weightInput" class="input-style" disabled>
+            <div onclick="closeModalButton('modalOne')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+
+        <!--Factored Number Modal-->
+        <div id="modalTwo" class="modal">
+            <div id="modalTwoContainer" class="modal-container">
+                <h3 class="modalTitle-design"></h3>
+                <p2 class="modalText-design"></p2>
+                <input type="number" id="fatoredNumberInput" class="input-style">
+                <p3 id="p3" class="modalText-design"></p3>
+                <div onclick="closeModalButton('modalTwo')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+
+        <!--Coversion Modal-->
+        <div id="modalThree" class="modal">
+            <div id="modalThreeContainer" class="modal-container">
+                <h4 class="modalTitle-design"></h4>
+                <p4 class="modalText-design"></p4>
+                <input type="number" id="realInput" class="input-style">
+                <p5 class="modalText-design"></p5>
+                <div onclick="closeModalButton('modalThree')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+
+        <!--Square Modal-->
+        <div id="modalFour" class="modal">
+            <div id="modalFourContainer" class="modal-container">
+                <h5 class="modalTitle-design"></h5>
+                <p6 class="modalText-design"></p6>
+                <input type="number" id="squareHeight" class="input-style">                
+                <input type="number" id="squareWeight" class="input-style" disabled>                
+                <div onclick="closeModalButton('modalFour')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+
+        <!--Circle Modal-->
+        <div id="modalFive" class="modal">
+            <div id="modalFiveContainer" class="modal-container">
+                <h6 class="modalTitle-design"></h6>
+                <p8 class="modalText-design"></p8>
+                <input type="number" id="rayLength" class="input-style">
+                <p9 class="modalText-design"></p9>
+                <div onclick="closeModalButton('modalFive')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+
+        <!--Multiplication Table Modal-->
+        <div id="modalSix" class="modal">
+            <div id="modalSixContainer" class="modal-container-table">
+                <h7 class="modalTitle-design"></h7>
+                <p10 class="modalText-design"></p10>
+                <input type="number" id="multNumberInput" class="input-style">
+                <p11 class="modalTable-design"></p11>
+                <div onclick="closeModalButton('modalSix')" class="close" id="closeModal">Fechar</div>
+            </div>
+    <!--Modals-->    
+
+    <script src="app.js" defer></script>
+</body>
+</html>

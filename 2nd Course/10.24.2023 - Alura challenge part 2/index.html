@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="title-design">
+        <h1 id="title"></h1>
+    </div>
+    
+    <div class="button-container">
+    <button onclick="scriptOne('modalOne')" class="button-design">Mundo</button>
+    <button onclick="scriptOne('modalTwo')" class="button-design">Nome</button>
+    <button onclick="scriptOne('modalThree')" class="button-design">Dobro</button>
+    <button onclick="scriptOne('modalFour')" class="button-design">Média</button>
+    <button onclick="scriptOne('modalFive')" class="button-design">Maior</button>
+    <button onclick="scriptOne('modalSix')" class="button-design">Potência</button>
+    </div>
+
+    <!--Modals-->
+        <div id="modalOne" class="modal">
+            <div id="modalOneContainer" class="modal-container">
+                <h2 class="modalTitle-design"></h2>
+                <p1 class="modalText-design"></p1>
+            </div>
+            <div onclick="closeModalButton('modalOne')" class="close" id="closeModal">Fechar</div>
+        </div>
+        <div id="modalTwo" class="modal">
+            <div id="modalTwoContainer" class="modal-container">
+                <h3 class="modalTitle-design"></h3>
+                <p2 class="modalText-design"></p2>
+                <input type="text" id="nameInput" placeholder="Ex.:Ana" class="input-style">
+                <p3 id="p3" class="modalText-design"></p3>
+                <div onclick="closeModalButton('modalTwo')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+        <div id="modalThree" class="modal">
+            <div id="modalThreeContainer" class="modal-container">
+                <h4 class="modalTitle-design"></h4>
+                <p4 class="modalText-design"></p4>
+                <span class="arrow up" id="incrementArrow"></span>
+                <input type="number" id="numberInput" class="input-style">
+                <span class="arrow down" id="decrementArrow"></span>
+                <p5 class="modalText-design"></p5>
+                <div onclick="closeModalButton('modalThree')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+        <div id="modalFour" class="modal">
+            <div id="modalFourContainer" class="modal-container">
+                <h5 class="modalTitle-design"></h5>
+                <p6 class="modalText-design"></p6>
+                <input type="number" id="numberInputOne" class="input-style">                
+                <input type="number" id="numberInputTwo" class="input-style">                
+                <input type="number" id="numberInputThree" class="input-style">
+                <p7 class="modalText-design"></p7>
+                <div onclick="closeModalButton('modalFour')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+        <div id="modalFive" class="modal">
+            <div id="modalFiveContainer" class="modal-container">
+                <h6 class="modalTitle-design"></h6>
+                <p8 class="modalText-design"></p8>
+                <input type="number" id="numberBiggerOne" class="input-style">                
+                <input type="number" id="numberBiggerTwo" class="input-style">
+                <p9 class="modalText-design"></p9>
+                <div onclick="closeModalButton('modalFive')" class="close" id="closeModal">Fechar</div>
+            </div>
+        </div>
+        <div id="modalSix" class="modal">
+            <div id="modalSixContainer" class="modal-container">
+                <h7 class="modalTitle-design"></h7>
+                <p10 class="modalText-design"></p10>
+                <input type="number" id="expNumberInput" class="input-style">
+                <p11 class="modalText-design"></p11>
+                <div onclick="closeModalButton('modalSix')" class="close" id="closeModal">Fechar</div>
+            </div>
+    <!--Modals-->    
+
+    <script src="app.js" defer></script>
+</body>
+</html>
